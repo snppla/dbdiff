@@ -4,7 +4,7 @@ var DbDiff = exports.DbDiff = require('./dbdiff')
 
 exports.describeDatabase = require('./dialects').describeDatabase
 
-if (module.id === require.main.id) {
+if (module.id === require.main?.id) {
   var yargs = require('yargs')
   var argv = yargs
       .usage('Usage: $0 conn_string1 conn_string2')
